@@ -10,11 +10,11 @@ def main(argv):
     try:
         opts, args = getopt.getopt(argv,"h:w:p:")
     except getopt.GetoptError:
-        print("test.py -w <number of words in the password> -p <number of passwords to generate>")
+        print("gen.py -w <number of words in the password> -p <number of passwords to generate>")
         sys.exit(2)
     for opt, arg in opts:
         if opt == ("-h"):
-            print("test.py -w <number of words in the password> -p <number of passwords to generate>")
+            print("gen.py -w <number of words in the password> -p <number of passwords to generate>")
             sys.exit()
         elif opt in ("-w"):
             numberOfWords = int(arg)
